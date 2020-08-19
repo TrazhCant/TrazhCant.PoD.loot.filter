@@ -1,4 +1,4 @@
-// TrazhCant's Loot Filter  2020.08.19  (Under Construction)
+// TrazhCant's Loot Filter
 // Designed to hide screens full of trazh.  Unicorn puke customizations have been kept minimal. ;P
 
 // Gold - Only show 5k+ piles.  If you're gold poor, stop gambling or stop dying.  Or both. ;P
@@ -12,9 +12,13 @@ ItemDisplay[bbb]: %TAN%L.E.Tome
 // Potions - Minors, Lights, Staminas, Thaws and Antidotes are always hidden.  At level 40+, only Supers and Juvs are displayed.  Visit Malah when needed.
 ItemDisplay[(hp1 OR hp2 OR mp1 OR mp2 OR vps OR yps OR wms)]:
 ItemDisplay[hp3 CLVL<20]: %WHITE%Heal
+ItemDisplay[hp3 CLVL>=20]:
 ItemDisplay[mp3 CLVL<20]: %WHITE%Mana
+ItemDisplay[mp3 CLVL>=20]:
 ItemDisplay[hp4 CLVL<40]: %WHITE%G.Heal
+ItemDisplay[hp4 CLVL>=40]: 
 ItemDisplay[mp4 CLVL<40]: %WHITE%G.Mana
+ItemDisplay[mp4 CLVL>=40]:
 ItemDisplay[hp5]: %WHITE%S.Heal
 ItemDisplay[mp5]: %WHITE%S.Mana 
 ItemDisplay[rvs]: %PURPLE%Juv
@@ -118,7 +122,10 @@ ItemDisplay[tes]: %ORANGE%» E.Suffering
 // Body Armor
 // Boots
 // Gloves
+
 // Helms
+
+
 // Shields
 // 1-Handed Melee Weapons
 // 2-Handed Melee Weapons
