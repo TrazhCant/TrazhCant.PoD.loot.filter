@@ -1,0 +1,127 @@
+// TrazhCant's Loot Filter  2020.08.19  (Under Construction)
+// Designed to hide screens full of trazh.  Unicorn puke customizations have been kept minimal. ;P
+
+// Gold - Only show 5k+ piles.  If you're gold poor, stop gambling or stop dying.  Or both. ;P
+ItemDisplay[GOLD<5000]:
+
+// Scrolls and Books - Scrolls and Books of TP and ID are hidden.  Horadric Quest Scroll (Act2) is hidden.  Book of Skill (Act 2) and Lan Esen's Tome (Act 3) are shortened.
+ItemDisplay[(tsc OR tbk OR isc OR ibk OR tr1)]:
+ItemDisplay[ass]: %TAN%B.Skill
+ItemDisplay[bbb]: %TAN%L.E.Tome
+
+// Potions - Minors, Lights, Staminas, Thaws and Antidotes are always hidden.  At level 40+, only Supers and Juvs are displayed.  Visit Malah when needed.
+ItemDisplay[(hp1 OR hp2 OR mp1 OR mp2 OR vps OR yps OR wms)]:
+ItemDisplay[hp3 CLVL<20]: %WHITE%Heal
+ItemDisplay[mp3 CLVL<20]: %WHITE%Mana
+ItemDisplay[hp4 CLVL<40]: %WHITE%G.Heal
+ItemDisplay[mp4 CLVL<40]: %WHITE%G.Mana
+ItemDisplay[hp5]: %WHITE%S.Heal
+ItemDisplay[mp5]: %WHITE%S.Mana 
+ItemDisplay[rvs]: %PURPLE%Juv
+ItemDisplay[rvl]: %PURPLE%F.Juv
+
+// Ammunition - Non-magic Bolts and Arrows are hidden.  So are thrown potions.
+ItemDisplay[(aq2 OR cq2) NMAG]:
+ItemDisplay[(gps OR ops OR gpm OR opm OR gpl OR opl)]:
+
+// Gems - All names have been shortened.  Only Flawless and Perfect gems are displayed by default.  Comment/Uncomment what you need.
+ItemDisplay[gcv]: //%GREEN%**%WHITE%Chip.A
+ItemDisplay[gfv]: //%GREEN%**%WHITE%Flawed.A
+ItemDisplay[gsv]: //%GREEN%**%WHITE%Amethyst
+ItemDisplay[gzv]: %GREEN%**%WHITE%F.Amethyst
+ItemDisplay[gpv]: %GREEN%**%WHITE%P.Amethyst
+ItemDisplay[gcy]: //%GREEN%**%WHITE%Chip.T
+ItemDisplay[gfy]: //%GREEN%**%WHITE%Flawed.T
+ItemDisplay[gsy]: //%GREEN%**%WHITE%Topaz
+ItemDisplay[gly]: %GREEN%**%WHITE%F.Topaz
+ItemDisplay[gpy]: %GREEN%**%WHITE%P.Topaz
+ItemDisplay[gcb]: //%GREEN%**%WHITE%Chip.S
+ItemDisplay[gfb]: //%GREEN%**%WHITE%Flawed.S
+ItemDisplay[gsb]: //%GREEN%**%WHITE%Sapphire
+ItemDisplay[glb]: %GREEN%**%WHITE%F.Sapphire
+ItemDisplay[gpb]: %GREEN%**%WHITE%P.Sapphire
+ItemDisplay[gcg]: //%GREEN%**%WHITE%Chip.E
+ItemDisplay[gfg]: //%GREEN%**%WHITE%Flawed.E
+ItemDisplay[gsg]: //%GREEN%**%WHITE%Emerald
+ItemDisplay[glg]: %GREEN%**%WHITE%F.Emerald
+ItemDisplay[gpg]: %GREEN%**%WHITE%P.Emerald
+ItemDisplay[gcr]: //%GREEN%**%WHITE%Chip.R
+ItemDisplay[gfr]: //%GREEN%**%WHITE%Flawed.R
+ItemDisplay[gsr]: //%GREEN%**%WHITE%Ruby
+ItemDisplay[glr]: %GREEN%**%WHITE%F.Ruby
+ItemDisplay[gpr]: %GREEN%**%WHITE%P.Ruby
+ItemDisplay[gcw]: //%GREEN%**%WHITE%Chip.D
+ItemDisplay[gfw]: //%GREEN%**%WHITE%Flawed.D
+ItemDisplay[gsw]: //%GREEN%**%WHITE%Diamond
+ItemDisplay[glw]: %GREEN%**%WHITE%F.Diamond
+ItemDisplay[gpw]: %GREEN%**%WHITE%P.Diamond
+
+// Runes - All runes are awesome!  Except El, Eld and Nef. ;P
+ItemDisplay[r01]: //%ORANGE%» El (01)
+ItemDisplay[r02]: //%ORANGE%» Eld (02)
+ItemDisplay[r03]: %ORANGE%» Tir (03)
+ItemDisplay[r04]: //%ORANGE%» Nef (04)
+ItemDisplay[r05]: %ORANGE%» Eth (05)
+ItemDisplay[r06]: %ORANGE%» Ith (06)
+ItemDisplay[r07]: %ORANGE%» Tal (07)
+ItemDisplay[r08]: %ORANGE%» Ral (08)
+ItemDisplay[r09]: %ORANGE%» Ort (09)
+ItemDisplay[r10]: %ORANGE%» Thul (10)
+ItemDisplay[r11]: %ORANGE%» Amn (11)
+ItemDisplay[r12]: %ORANGE%» Sol (12)
+ItemDisplay[r13]: %ORANGE%» Shael (13)
+ItemDisplay[r14]: %ORANGE%» Dol (14)
+ItemDisplay[r15]: %ORANGE%» Hel (15)
+ItemDisplay[r16]: %ORANGE%» Io (16)
+ItemDisplay[r17]: %ORANGE%» Lum (17)
+ItemDisplay[r18]: %ORANGE%» Ko (18)
+ItemDisplay[r19]: %ORANGE%» Fal (19)
+ItemDisplay[r20]: %ORANGE%» Lem (20)
+ItemDisplay[r21]: %ORANGE%» Pul (21)
+ItemDisplay[r22]: %ORANGE%» Um (22)
+ItemDisplay[r23]: %ORANGE%» Mal (23)
+ItemDisplay[r24]: %ORANGE%» Ist (24)
+ItemDisplay[r25]: %ORANGE%» Gul (25)
+ItemDisplay[r26]: %ORANGE%» Vex (26)
+ItemDisplay[r27]: %ORANGE%» Ohm (27)
+ItemDisplay[r28]: %ORANGE%» Lo (28)
+ItemDisplay[r29]: %ORANGE%» Sur (29)
+ItemDisplay[r30]: %ORANGE%» Ber (30)
+ItemDisplay[r31]: %ORANGE%» Jah (31)
+ItemDisplay[r32]: %ORANGE%» Cham (32)
+ItemDisplay[r33]: %ORANGE%» Zod (33)
+
+// Charms - I haven't written any filters for these.
+
+// Miscellaneous - Other random materials.
+ItemDisplay[key]: //%NAME%
+ItemDisplay[pk1]: %ORANGE%» T.Key
+ItemDisplay[pk2]: %ORANGE%» H.Key
+ItemDisplay[pk3]: %ORANGE%» D.Key
+ItemDisplay[cx5]: %GREEN%**%PURPLE% OOC
+ItemDisplay[bet]: %ORANGE%» E.Terror
+ItemDisplay[ceh]: %ORANGE%» E.Hatred
+ItemDisplay[fed]: %ORANGE%» E.Destruction
+ItemDisplay[tes]: %ORANGE%» E.Suffering
+
+// Amazon Only
+// Assassin Only
+// Barbarian Only
+// Druid Only
+// Necromancer Only
+// Paladin Only
+// Sorceress Only
+
+// Amulets
+// Rings
+// Belts
+// Body Armor
+// Boots
+// Gloves
+// Helms
+// Shields
+// 1-Handed Melee Weapons
+// 2-Handed Melee Weapons
+// Missile Weapons
+// Wands and Staves
+// Throwing Weapons
