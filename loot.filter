@@ -59,6 +59,11 @@ ItemDisplay[gfw]: //%GREEN%**%WHITE%Flawed.D
 ItemDisplay[gsw]: //%GREEN%**%WHITE%Diamond
 ItemDisplay[glw]: %GREEN%**%WHITE%F.Diamond
 ItemDisplay[gpw]: %GREEN%**%WHITE%P.Diamond
+ItemDisplay[skc]: //%GREEN%**%WHITE%Chip.K
+ItemDisplay[skf]: //%GREEN%**%WHITE%Flawed.K
+ItemDisplay[sku]: //%GREEN%**%WHITE%Skull
+ItemDisplay[skl]: %GREEN%**%WHITE%F.Skull
+ItemDisplay[skz]: %GREEN**%WHITE%P.Skull
 
 // Runes - All runes are awesome!  Except El, Eld and Nef. ;P
 ItemDisplay[r01]: //%ORANGE%» El (01)
