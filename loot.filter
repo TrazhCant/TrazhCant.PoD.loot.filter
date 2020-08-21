@@ -11,13 +11,11 @@
 // easier to snatch, you won't find that here.  I want things to be visible, but
 // I also want things to not be noisy or "cheaty-faced". ;)  Enjoy!!
 
-// Gold - Only show 5k+ piles.  If you're gold poor, stop gambling or
-// stop dying.  Or both. ;P
+// Gold - Only show 5k+ piles.  If you're gold poor, stop gambling or stop dying.  Or both. ;P
 ItemDisplay[GOLD<5000]:
 
 // Scrolls and Books - Scrolls and Books of TP and ID are hidden.  Horadric
-// Quest Scroll (Act2) is hidden.  Book of Skill (Act 2) and Lan Esen's Tome
-// (Act 3) are shortened.
+// Quest Scroll (Act2) is hidden.  Book of Skill (Act 2) and Lan Esen's Tome (Act 3) are shortened.
 ItemDisplay[(tsc OR tbk OR isc OR ibk OR tr1)]:
 ItemDisplay[ass]: %TAN%B.Skill
 ItemDisplay[bbb]: %TAN%L.E.Tome
@@ -42,8 +40,8 @@ ItemDisplay[rvl]: %PURPLE%F.Juv
 ItemDisplay[(aq2 OR cq2) NMAG]:
 ItemDisplay[(gps OR ops OR gpm OR opm OR gpl OR opl)]:
 
-// Gems - All names have been shortened.  Only Flawless and Perfect gems are
-// displayed by default.  Comment/Uncomment what you need.
+// Gems - All names have been shortened.  Only Flawless and Perfect gems are displayed by default.
+// Comment/Uncomment what you need.
 ItemDisplay[gcv]: //%GREEN%**%WHITE%Chip.A
 ItemDisplay[gfv]: //%GREEN%**%WHITE%Flawed.A
 ItemDisplay[gsv]: //%GREEN%**%WHITE%Amethyst
@@ -130,6 +128,7 @@ ItemDisplay[tes]: %ORANGE%» E.Suffering
 
 // Sockets Display
 ItemDisplay[(ARMOR OR WEAPON) (SOCK>0)]: %GRAY%[%SOCKETS%Os] %CONTINUE%
+
 // Ethereal Display
 ItemDisplay[(ARMOR OR WEAPON) (ETH)]: %GRAY%Eth. %CONTINUE%
 
@@ -140,8 +139,10 @@ ItemDisplay[(ARMOR OR WEAPON) (ETH)]: %GRAY%Eth. %CONTINUE%
 // Necromancer Only
 // Paladin Only
 // Sorceress Only
+
 // Amulets
 // Rings
+
 // Belts
 // Body Armor
 // Boots
