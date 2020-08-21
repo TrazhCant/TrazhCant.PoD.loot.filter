@@ -1,26 +1,40 @@
-// TrazhCant's Loot Filter
-// Designed to hide screens full of trazh.  Unicorn puke customizations have been kept minimal. ;P
+// TrazhCant's Loot Filter ver. 2020.08.21
+//
+// Contributor - TrazhCant
+//
+// This is designed for PvM players to hide screens full of trazh loot.
+// Unicorn puke customizations have been kept minimal. ;P
+// Also, this being designed for PvM, I have not included filtration for those
+// interested in farming for PvP stuff.  My background is heavily rooted in
+// Hardcore, but I wrote this as Softcore/Hardcore agnostic from my perspective.
+// Lastly, if you're hoping for giant labels to appear for good stuff so it's
+// easier to snatch, you won't find that here.  I want things to be visible, but
+// I also want things to not be noisy or "cheaty-faced". ;)  Enjoy!!
 
-// Gold - Only show 5k+ piles.  If you're gold poor, stop gambling or stop dying.  Or both. ;P
+// Gold - Only show 5k+ piles.  If you're gold poor, stop gambling or
+// stop dying.  Or both. ;P
 ItemDisplay[GOLD<5000]:
 
-// Scrolls and Books - Scrolls and Books of TP and ID are hidden.  Horadric Quest Scroll (Act2) is hidden.  Book of Skill (Act 2) and Lan Esen's Tome (Act 3) are shortened.
+// Scrolls and Books - Scrolls and Books of TP and ID are hidden.  Horadric
+// Quest Scroll (Act2) is hidden.  Book of Skill (Act 2) and Lan Esen's Tome
+// (Act 3) are shortened.
 ItemDisplay[(tsc OR tbk OR isc OR ibk OR tr1)]:
 ItemDisplay[ass]: %TAN%B.Skill
 ItemDisplay[bbb]: %TAN%L.E.Tome
 
-// Potions - Minors, Lights, Staminas, Thaws and Antidotes are always hidden.  At level 40+, only Supers and Juvs are displayed.  Visit Malah when needed.
+// Potions - Minors, Lights, Staminas, Thaws and Antidotes are always hidden.
+// At level 40+, only Supers and Juvs are displayed.  Visit Malah when needed.
 ItemDisplay[(hp1 OR hp2 OR mp1 OR mp2 OR vps OR yps OR wms)]:
 ItemDisplay[hp3 CLVL<20]: %WHITE%Heal
 ItemDisplay[hp3 CLVL>=20]:
 ItemDisplay[mp3 CLVL<20]: %WHITE%Mana
 ItemDisplay[mp3 CLVL>=20]:
 ItemDisplay[hp4 CLVL<40]: %WHITE%G.Heal
-ItemDisplay[hp4 CLVL>=40]: 
+ItemDisplay[hp4 CLVL>=40]:
 ItemDisplay[mp4 CLVL<40]: %WHITE%G.Mana
 ItemDisplay[mp4 CLVL>=40]:
 ItemDisplay[hp5]: %WHITE%S.Heal
-ItemDisplay[mp5]: %WHITE%S.Mana 
+ItemDisplay[mp5]: %WHITE%S.Mana
 ItemDisplay[rvs]: %PURPLE%Juv
 ItemDisplay[rvl]: %PURPLE%F.Juv
 
@@ -28,7 +42,8 @@ ItemDisplay[rvl]: %PURPLE%F.Juv
 ItemDisplay[(aq2 OR cq2) NMAG]:
 ItemDisplay[(gps OR ops OR gpm OR opm OR gpl OR opl)]:
 
-// Gems - All names have been shortened.  Only Flawless and Perfect gems are displayed by default.  Comment/Uncomment what you need.
+// Gems - All names have been shortened.  Only Flawless and Perfect gems are
+// displayed by default.  Comment/Uncomment what you need.
 ItemDisplay[gcv]: //%GREEN%**%WHITE%Chip.A
 ItemDisplay[gfv]: //%GREEN%**%WHITE%Flawed.A
 ItemDisplay[gsv]: //%GREEN%**%WHITE%Amethyst
@@ -113,6 +128,11 @@ ItemDisplay[ceh]: %ORANGE%» E.Hatred
 ItemDisplay[fed]: %ORANGE%» E.Destruction
 ItemDisplay[tes]: %ORANGE%» E.Suffering
 
+// Sockets Display
+ItemDisplay[(ARMOR OR WEAPON) (SOCK>0)]: %GRAY%[%SOCKETS%Os] %CONTINUE%
+// Ethereal Display
+ItemDisplay[(ARMOR OR WEAPON) (ETH)]: %GRAY%Eth. %CONTINUE%
+
 // Amazon Only
 // Assassin Only
 // Barbarian Only
@@ -120,17 +140,13 @@ ItemDisplay[tes]: %ORANGE%» E.Suffering
 // Necromancer Only
 // Paladin Only
 // Sorceress Only
-
 // Amulets
 // Rings
 // Belts
 // Body Armor
 // Boots
 // Gloves
-
 // Helms
-
-
 // Shields
 // 1-Handed Melee Weapons
 // 2-Handed Melee Weapons
