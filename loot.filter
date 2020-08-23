@@ -127,10 +127,13 @@ ItemDisplay[fed]: %ORANGE%» E.Destruction
 ItemDisplay[tes]: %ORANGE%» E.Suffering
 
 // Sockets Display
-ItemDisplay[(ARMOR OR WEAPON) (SOCK>0)]: %GRAY%[%SOCKETS%Os] %CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) (SOCK>0)]: %GRAY%[%SOCKETS% soc] %CONTINUE%
 
 // Ethereal Display
 ItemDisplay[(ARMOR OR WEAPON) (ETH)]: %GRAY%Eth. %CONTINUE%
+
+// Temporary Fix
+ItemDisplay[(ARMOR OR WEAPON)]: %NAME%
 
 // Amazon Only
 // Assassin Only
