@@ -79,10 +79,10 @@ ItemDisplay[skl]: %GREEN%**%WHITE%F.Skull
 ItemDisplay[skz]: %GREEN%**%WHITE%P.Skull
 
 // Runes - All runes are awesome!  Except El, Eld and Nef. ;P
-ItemDisplay[r01]: //%ORANGE%» El (01)
-ItemDisplay[r02]: //%ORANGE%» Eld (02)
+ItemDisplay[r01]: %ORANGE%» El (01)
+ItemDisplay[r02]: %ORANGE%» Eld (02)
 ItemDisplay[r03]: %ORANGE%» Tir (03)
-ItemDisplay[r04]: //%ORANGE%» Nef (04)
+ItemDisplay[r04]: %ORANGE%» Nef (04)
 ItemDisplay[r05]: %ORANGE%» Eth (05)
 ItemDisplay[r06]: %ORANGE%» Ith (06)
 ItemDisplay[r07]: %ORANGE%» Tal (07)
